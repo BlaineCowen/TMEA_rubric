@@ -1,0 +1,117 @@
+
+// Language: scss
+$five: #26547C;
+$four: #ef476f;
+$three: #f47a1d;
+$two: #06D6A0;
+$one: #118AB2;
+
+:root {
+// font color to white
+    color: aliceblue;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+
+}
+
+mat-grid-tile {
+    background: lightgray;
+    color: aliceblue;
+    font-size: 1.5em;
+    // flex
+    display: flex;
+  }
+
+    mat-grid-tile:nth-child(1) {
+        display: none
+    }
+
+.cat {
+    background: rgb(70, 70, 70);
+  }
+
+.header {
+    background: lightblue;
+  }
+
+.desc {
+    color:black,
+}
+
+// add a hover effect to the grid tiles
+
+// turn black when clicked
+.desc:active {
+    background: black;
+  }
+
+.five.header {
+    background: $five
+  }
+
+  .five.desc {
+    
+    box-sizing: border-box;
+    border-left: 5px solid $five;
+  }
+
+// .five.desc:hover {
+//     background: lighten($color: $five, $amount: 30)
+//     }
+
+.four.header {
+    background: $four
+  }
+
+  .four.desc {
+    box-sizing: border-box;
+    border-left: 4px solid $four;
+  }
+
+.four.desc:hover {
+    background: lighten($color: $four, $amount: 30)
+    }
+
+.three.header {
+    background: $three
+  }
+
+  .three.desc {
+    box-sizing: border-box;
+    border-left: 5px solid $three;
+  }
+
+.three.desc:hover {
+    background: lighten($color: $three, $amount: 30)
+    }
+
+.two.header {
+    background: $two
+  }
+
+  .two.desc {
+   box-sizing: border-box;
+    border-left: 5px solid $two;
+  }
+
+.two.desc:hover {
+    background: lighten($color: $two, $amount: 30)
+    }
+
+.one.header {
+    background: $one
+  }
+
+  .one.desc {
+   box-sizing: border-box;
+    border-left: 5px solid $one;
+  }
+
+.one.desc:hover {
+    background: lighten($color: $one, $amount: 30)
+    }
+
+
